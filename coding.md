@@ -83,7 +83,13 @@ Durante el desarrollo de nuestro software tenemos que tener en cuenta los siguie
 
 Nodemon es una utilidad que monitorea los cambios en el código fuente que se esta desarrollando y automáticamente re inicia el servidor. Es una herramienta muy útil para desarrollo de aplicaciones en nodojs.
 
-**nodemon.json**
+Comando para instalar
+
+```bash
+npm install --save-dev nodemon
+```
+
+Para la configuración, se debe crear un archivo en la raíz con el nombre `nodemon.json` y con el siguiente contenido.
 
 ```json
 {
@@ -95,5 +101,15 @@ Nodemon es una utilidad que monitorea los cambios en el código fuente que se es
   },
   "exec": "npm run start",
   "ext": "js,json"
+}
+```
+
+Para la integración, debes agregar el siguiente script dentro del `package.json` del proyecto:
+
+```json
+{
+  "scripts": {
+    "dev": "nodemon"
+  }
 }
 ```
