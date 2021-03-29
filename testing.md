@@ -1,6 +1,6 @@
 # Pruebas
 
-## Ejemplos: Express (API REST / SOCKET) + Jest
+## Ejemplos: Express (API REST / SOCKET) + Jest
 
 ```javascript
 // index.test.js
